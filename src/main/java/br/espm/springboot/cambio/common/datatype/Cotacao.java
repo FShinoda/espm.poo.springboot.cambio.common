@@ -1,12 +1,13 @@
 package br.espm.springboot.cambio.common.datatype;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Cotacao {
 
     private String id;
     private Moeda moeda;
-    private double valor;
+    private BigDecimal valor;
     private Date data;
 
     // Get
@@ -18,7 +19,7 @@ public class Cotacao {
         return moeda;
     }
 
-    public double getValor(){
+    public BigDecimal getValor(){
         return valor;
     }
 
@@ -35,7 +36,7 @@ public class Cotacao {
         this.moeda = moeda;
     }
 
-    public void setValor(double valor){
+    public void setValor(BigDecimal valor){
         this.valor = valor;
     }
 
